@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".LoginActiviy">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <TextView
+            android:text="K24"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:fontFamily="@font/fpoppinsemib"
+            android:textSize="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/login_background">
+
+        <TextView
+            android:fontFamily="@font/fpoppinsemib"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:text="Sign in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_username"
+            android:drawableStart="@drawable/user"
+            android:hint="Username ( input 'admin' )"
+            android:padding="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:background="@drawable/form_background"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:drawableStart="@drawable/key"
+            android:padding="17dp"
+            android:hint="Password ( input 'admin' )"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            app:passwordToggleEnabled="true"
+            android:inputType="textPassword"
+            android:background="@drawable/form_background" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginTop="24dp"
+            android:text="LOGIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginbutton_background"
+            app:backgroundTint="#38E54D"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
